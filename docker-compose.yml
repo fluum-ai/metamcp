@@ -161,7 +161,7 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-    restart: "no"
+    restart: "unless-stopped"
     networks:
       - metamcp-network
 
