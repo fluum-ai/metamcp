@@ -1,5 +1,5 @@
 services:
-  app:
+  metamcp-app:
     container_name: metamcp
     image: ghcr.io/metatool-ai/metamcp:latest
     pull_policy: always
@@ -165,7 +165,7 @@ services:
     networks:
       - metamcp-network
 
-  postgres:
+  metamcp-postgres:
     image: postgres:16-alpine
     container_name: metamcp-pg
     restart: always
